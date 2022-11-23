@@ -1,0 +1,524 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000 url("imgs/home_5.webp") no-repeat top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-width: 940px;
+  src: url("font/Exocet.ttf");
+  font-family: Exocet;
+}
+
+@font-face {
+  font-family: "Exocet";
+  src: url("font/Exocet.ttf");
+}
+
+.content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.title {
+  background-image: url("imgs/logo8.gif");
+  background-repeat: no-repeat;
+  background-color: initial;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  max-width: 450px;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 14px;
+  margin-right: -14px;
+}
+
+.main-nav a {
+  background: no-repeat url("imgs/navButton.webp");
+}
+
+.main-nav a {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  width: 183px;
+  height: 60px;
+  color: rgb(216, 184, 156);
+  text-decoration: none;
+  src: url("font/Exocet.ttf");
+  font-family: Exocet;
+}
+
+.main-nav a:hover {
+  border-top: 1px solid #6e4747;
+  border-bottom: 1px solid #6e4747;
+  color: #752f2f;
+  opacity: 0.9;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.info h3 {
+  font-size: 25px;
+  padding: 30px 50px 0 50px;
+  color: rgb(155, 146, 133);
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+.info a {
+  padding: 10px 80px;
+  color: rgb(155, 146, 133);
+  text-decoration: none;
+  line-height: 14px;
+}
+
+.info a:hover {
+  color: rgb(146, 121, 85);
+}
+
+.container {
+  display: flex;
+}
+
+span {
+  display: inline;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.video {
+  background: transparent;
+  overflow: hidden;
+}
+
+.video img {
+  background: transparent;
+  width: 417px;
+  height: 232px;
+  margin-top: 12px;
+  margin-left: 7px;
+}
+
+.play-button {
+  width: 90px;
+  height: 60px;
+  position: absolute;
+  left: 34%;
+  top: 103%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.play-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: #6e2b2b;
+}
+
+.right {
+  display: flex;
+  flex-flow: column;
+  height: 385px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.right p {
+  font-size: 20px;
+}
+
+.description {
+  color: #5d5851;
+  font-family: sans-serif;
+  padding: 40px 60px 0 50px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+
+.download {
+  background-image: url("https://www.median-xl.com/styles/img/home/button.webp");
+  width: 211px;
+  height: 50px;
+  padding: 12px 30px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(216, 184, 156);
+  opacity: 0.7;
+  align-self: center;
+  line-height: 30px;
+}
+
+.download:hover {
+  border-top: 1px solid #752f2f;
+  border-bottom: 1px solid #752f2f;
+}
+
+.patch {
+  display: flex;
+  justify-content: center;
+  color: rgb(90, 90, 89);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.content-container {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.right span {
+  color: rgb(142 134 123);
+  justify-self: flex-end;
+}
+
+.requires {
+  text-decoration: none;
+  color: rgb(220, 202, 150);
+}
+
+.info a {
+  margin-top: 3px;
+}
+
+.skills {
+  display: flex;
+  width: 937px;
+  height: 530px;
+  background-image: url("https://www.median-xl.com/styles/img/home/featureSkills2.webp");
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  padding: 30px 45px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.skills-info {
+  color: rgb(157, 148, 136);
+  text-shadow: rgb(0 0 0) 2px 2px;
+  max-width: 600px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 23px;
+}
+
+.skills h3 {
+  font-size: 44px;
+  color: rgb(61 65 68);
+  opacity: 0.5;
+}
+
+.skillbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: space-around;
+  max-width: 380px;
+}
+
+.skillbox div {
+  border: 1px solid rgb(136, 136, 136);
+}
+
+.skillbox i {
+  color: rgb(157, 148, 136);
+  font-size: 12px;
+  align-self: flex-end;
+}
+
+.skill01 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/broadside.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill01 div {
+  visibility: hidden;
+}
+
+.skills01:hover div {
+  position: absolute;
+  visibility: visible;
+  width: 200px;
+}
+
+.skill02 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/wyrmshot.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill03 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/harbinger.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill04 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/dreameater.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill05 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/superbeast.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill06 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/havoc.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill07 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/thunderslam.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill08 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/meteorshower.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill09 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/RisingDawn.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.skill10 {
+  background-image: url("https://www.median-xl.com/styles/img/home/icons/Teleport.webp");
+  width: 48px;
+  height: 48px;
+}
+
+.items {
+  background-image: url("https://www.median-xl.com/styles/img/home/featureItems2.webp");
+  background-repeat: no-repeat;
+  width: 937px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}
+
+.items h3 {
+  font-size: 40px;
+  color: rgb(61 65 68);
+  opacity: 0.5;
+}
+
+.items p {
+  width: 500px;
+  color: rgb(157, 148, 136);
+  text-shadow: rgb(0 0 0) 2px 2px;
+  font-size: 16px;
+  align-self: flex-start;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.quests {
+  background-image: url("https://www.median-xl.com/styles/img/home/featureEndgame3.webp");
+  background-repeat: no-repeat;
+  width: 937px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.quests h3 {
+  font-size: 40px;
+  color: rgb(61 65 68);
+  opacity: 0.5;
+  padding-right: 80px;
+}
+
+.quests p {
+  width: 500px;
+  color: rgb(157, 148, 136);
+  text-shadow: rgb(0 0 0) 2px 2px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.new-areas {
+  background-image: url("https://www.median-xl.com/styles/img/home/featureAreas3.webp");
+  background-repeat: no-repeat;
+  width: 937px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.new-areas h3 {
+  font-size: 40px;
+  color: rgb(61 65 68);
+  opacity: 0.5;
+  padding-right: 80px;
+}
+
+.new-areas p {
+  width: 650px;
+  color: rgb(157, 148, 136);
+  text-shadow: rgb(0 0 0) 2px 2px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.crafting {
+  background-image: url("https://www.median-xl.com/styles/img/home/featureCrafting2.webp");
+  background-repeat: no-repeat;
+  width: 937px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.crafting h3 {
+  font-size: 40px;
+  color: rgb(61 65 68);
+  opacity: 0.5;
+  padding-right: 80px;
+}
+
+.crafting p {
+  width: 500px;
+  color: rgb(157, 148, 136);
+  text-shadow: rgb(0 0 0) 2px 2px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.qol {
+  background-image: url("https://www.median-xl.com/styles/img/home/featureQol4.webp");
+  background-repeat: no-repeat;
+  width: 937px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.qol h3 {
+  font-size: 40px;
+  color: rgb(61 65 68);
+  opacity: 0.5;
+  padding-right: 80px;
+}
+
+.qol p,
+li {
+  width: 500px;
+  color: rgb(157, 148, 136);
+  text-shadow: rgb(0 0 0) 2px 2px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.qol ul {
+  padding-left: 50px;
+}
+
+.online {
+  background-image: url("https://www.median-xl.com/styles/img/home/featureMulti.webp");
+  background-repeat: no-repeat;
+  width: 937px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.online h3 {
+  font-size: 36px;
+  color: rgb(61 65 68);
+  opacity: 0.5;
+  padding-right: 80px;
+}
+
+.online p {
+  width: 500px;
+  color: rgb(157, 148, 136);
+  text-shadow: rgb(0 0 0) 2px 2px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.separator {
+  background-image: url("https://www.median-xl.com/styles/img/home/separator.png");
+  width: 234px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.sitemap {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.sitemap ul,
+.sitemap li,
+.sitemap a {
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  color: rgba(78, 74, 67, 0.9);
+}

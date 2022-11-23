@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: Font;
+}
+
+@font-face {
+  font-family: Font;
+  src: url(KFOmCnqEu92Fr1Mu4mxK.woff2);
+}
+
+.main-header {
+  margin: 24px auto;
+  max-width: 155px;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 470px;
+  margin: 0 auto;
+  outline: 1px solid rgb(221, 216, 216);
+  border-radius: 5px;
+  padding: 24px 48px 48px;
+  /* box-shadow: #000; */
+  box-shadow: 0px 2px 6px 3px #b2b2b2;
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
+}
+
+.login-header a {
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.login-header .first:visited {
+  color: #565676;
+}
+
+.login-header .first {
+  text-decoration-line: underline;
+  text-decoration-color: #2196f3;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 4px;
+}
+
+.second {
+  color: #b2b2b2;
+}
+
+.login-system {
+  margin: 24px 0;
+}
+
+.login-system h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+form input {
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #556556;
+  border-radius: 5px;
+}
+
+.login-name {
+  margin-bottom: 30px;
+}
+
+.rememberme {
+  content: url(https://platform.softuni.bg/Content/images/icons/checkbox-checked.svg);
+  position: relative;
+}
+
+.login-password {
+  margin-bottom: 5px;
+}
+
+.forgotten {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.login-password a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+button {
+  background-color: #2196f3;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.rememberme {
+  margin-bottom: 30px;
+}
+
+.newreg {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.newreg a {
+  font-weight: 800;
+}
+
+.newreg span {
+  font-size: 18px;
+}
+
+.label {
+  display: flex;
+  gap: 6px;
+}
+
+.label span {
+  font-size: 18px;
+}
+
+.external-login button {
+  display: flex;
+  background-color: transparent;
+  color: #565656;
+  cursor: pointer;
+  outline: 1px solid #cecccc;
+  box-shadow: 1px 2px 0px 1px #b2b2b2;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}

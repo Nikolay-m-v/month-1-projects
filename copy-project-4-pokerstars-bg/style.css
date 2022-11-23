@@ -1,0 +1,404 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1260px;
+    padding: 0 15px;
+}
+
+.img-logo {
+    height: 45px;
+}
+
+
+.img-logo  img {
+    height: 45px;
+    width: 150px;
+    padding: 10px 0;
+    vertical-align: center;
+}
+
+.download {
+    background: #02BD9C;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    padding: 0 10px;
+    height: 32px;
+    font-size: 0.9em;
+}
+
+.container {
+    background: url("imgs/vladko.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    /* width: 1230px; */
+    height: 100%;
+    margin: 0 auto;
+    /* background-size: 100%; */
+    /* max-width: 667px; */
+    height: 532px;
+
+}
+
+.container .main-info {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flext-start;
+    /* padding-top: 60%;
+    padding-bottom: 5%; */
+}
+
+.main-info button  {
+    background: #02BD9C;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    width: 302px;
+    height: 48px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.container button { 
+    display: block;
+}
+
+.main-info h1 {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.main-info h1, .main-info p {
+    color: #fff;
+    margin-bottom: 15px;
+    /* line-height: 24px; */
+    /* width: 605px; */
+}
+
+.main-info p {
+    font-size: 30px;   
+    line-height: 38px;
+}
+
+.main-info .important-info {
+    font-size: 11px;
+    padding: 0;
+    line-height: 13px;
+}
+
+.important-info a, .wrapper a, .terms a {
+    color: #02bd9c;
+    text-decoration: none;
+}
+
+.important-info a:hover, .wrapper a:hover, .terms a:hover {
+    color: #02bd9c;
+    text-decoration: underline;
+}
+
+.steps {
+    background: #212121;
+    height: auto;
+    padding: 25px 0;
+}
+
+.container-flex {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1260px;
+    padding-bottom: 20px;
+}
+
+.steps h3, .steps p {
+    color: #fff;
+    line-height: 30px;
+}
+
+.s1 , .s2 , .s3  {
+    width: 32%;
+    height: 80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+
+.site-text {
+    position: relative;
+    word-wrap: break-all;
+    overflow-wrap: break-word;
+    padding-left: 40px;
+}
+
+.s1 .site-text:before {
+    content: "1";
+}
+
+.site-text:before {
+    content: "2";
+}
+
+.s3 .site-text:before {
+    content: "3";
+}
+
+.s1 .site-text:before, .s2 .site-text:before, .s3 .site-text:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #D70022;
+    font-size: 54px;
+    line-height: 54px;
+    font-weight: bold;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper p {
+    color: #999999;
+}
+
+.content-2 {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.content-2 img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.item1, .item2, .item3 {
+    width: 32%;
+}
+
+.content-2 h3 {
+    font-size: 1.33em;
+}
+
+.item2 h3 {
+    height: 50px;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.backtostart {
+    background: url("https://www.psimg.com/sites/assets/pages/all/sprite-ps.png") no-repeat;
+    background-position: -180px -60px;
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin: 1em auto;
+}
+
+.terms .container-flex {
+    width: 900px;
+}
+
+.terms h2 {
+    padding-bottom: 20px;
+}
+
+.terms ul {
+    list-style-type: none;
+}
+
+.terms li:before { 
+    content: "\2605";
+    margin-right: 10px;
+}
+
+.terms li {
+    padding-bottom: 10px;
+    text-indent: -1.30em;
+    font-size: 15px;
+}
+
+.terms p {
+    padding: 10px 0;
+}
+
+footer {
+    background-image: none;
+    background: #000;
+}
+
+footer li {
+    padding: 0 0 15px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer h4 {
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 19px;
+}
+
+.footertop {
+    padding-top: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.logo-nav {
+    display: block;
+    width: 33.333333%;
+}
+
+.logo-nav span {
+    background-image: url("https://s4.rationalcdn.com/img/bg/estate/footer-small.png");
+    background-repeat: no-repeat;
+    height: 38px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 45px;
+}
+
+.logo1 {
+    background-position: 0 -2255px;
+    width: 73px;
+    height: 38px;
+}
+
+.logo2 {
+    background-position: 0 -596px;
+    width: 61px;
+}
+
+.logo3 {
+    background-position: 0 -1813px;
+    width: 40px;
+}
+
+.logo4 {
+    background-position: 0 -2961px;
+    width: 60px;
+    margin-left: 64px;
+}
+
+.logo5 {
+    background-position: 0 -1515px;
+    width: 130px;
+}
+
+
+.logo6 {
+    background-position: 0 -150px;
+    width: 35px;
+    margin-left: 140px;
+}
+
+.footerbottom {
+    background: #181818;
+    padding: 20px 0;
+}
+
+.footerbottom p {
+    color: #d1d1d1;
+    font-size: 12px;
+    padding: 10px 0;
+    line-height: 2em;
+}
+
+.footerbottom a {
+    color: #36E7C7;
+}
+
+.footerbottom a:hover {
+    color: #91F2E0;
+    text-decoration: underline;
+}
+
+.copyright {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.left {
+    width: 66.66%;
+}
+
+.right {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img:hover {
+    object-position: -24px 0;
+}
+
+.right img {
+    margin-left: 30px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    padding: 0;
+    object-position: 0px 0;
+}
+
+.clock {
+    display: flex;
+    height: 44px;
+    background-color: #212121;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
